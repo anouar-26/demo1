@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For My One & Only, SALMA 🤍</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #7c6756;
+  color: #fdfbf7;
+  font-family: 'Cormorant Garamond', serif;
+  text-align: center;
+  overflow-x: hidden;
+  padding: 18px;
+}
+
+.page-frame {
+  max-width: 1100px;
+  margin: auto;
+  background-color: #b49f8e;
+  background-image: 
+    radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 0),
+    radial-gradient(rgba(60, 42, 30, 0.08) 1px, transparent 0);
+  background-size: 24px 24px;
+  background-position: 0 0, 12px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 20px 50px rgba(38, 25, 16, 0.45);
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.floral-top-right {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  width: 240px;
+  opacity: 0.85;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.floral-bottom-left {
+  position: absolute;
+  bottom: -15px;
+  left: -15px;
+  width: 260px;
+  opacity: 0.85;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.music-control {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 100;
+  background: #5c493b;
+  color: #fdfbf7;
+  border: 1px solid #e6d5c7;
+  padding: 12px 20px;
+  border-radius: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.music-control:hover {
+  background: #46362b;
+  transform: translateY(-2px);
+}
+
+.hero {
+  min-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 25px;
+  position: relative;
+  z-index: 2;
+}
+
+.small-title {
+  font-family: 'Montserrat', sans-serif;
+  color: #f7efe8;
+  letter-spacing: 5px;
+  font-size: 11px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  opacity: 0.9;
+}
+
+.hero h1 {
+  font-family: 'Allura', cursive;
+  font-size: clamp(64px, 12vw, 110px);
+  color: #ffffff;
+  font-weight: 400;
+  text-shadow: 0 4px 15px rgba(74, 56, 43, 0.25);
+  line-height: 1.1;
+}
+
+.quote-box {
+  max-width: 620px;
+  margin: 22px auto;
+  font-style: italic;
+  font-size: clamp(19px, 3vw, 24px);
+  letter-spacing: 1.5px;
+  line-height: 1.7;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.quote-mark {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 38px;
+  line-height: 0;
+  vertical-align: middle;
+  color: #f3e5da;
+}
+
+.main-photo-wrapper {
+  position: relative;
+  margin: 25px 0;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.22);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 160px 160px 16px 16px;
+  box-shadow: 0 15px 35px rgba(66, 49, 37, 0.25);
+}
+
+.main-photo {
+  width: 245px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 150px 150px 12px 12px;
+  display: block;
+}
+
+.hero h2 {
+  font-family: 'Allura', cursive;
+  color: #ffffff;
+  font-size: 62px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.btn-primary {
+  background: #6b5545;
+  color: #ffffff;
+  border: 1px solid #f2e6dc;
+  padding: 14px 34px;
+  border-radius: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 25px;
+  transition: 0.35s ease;
+  box-shadow: 0 6px 20px rgba(66, 49, 37, 0.25);
+}
+
+.btn-primary:hover {
+  background: #524033;
+  transform: scale(1.04);
+}
+
+.divider {
+  width: 140px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.45);
+  margin: 10px auto 40px;
+  position: relative;
+}
+
+.divider::after {
+  content: "❀";
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #b49f8e;
+  padding: 0 10px;
+  color: #f5ebe2;
+  font-size: 16px;
+}
+
+section {
+  padding: 70px 25px;
+  position: relative;
+  z-index: 2;
+}
+
+section h2 {
+  font-family: 'Allura', cursive;
+  color: #ffffff;
+  font-size: 62px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #f5ebe2;
+  margin-bottom: 40px;
+  font-style: italic;
+  font-size: 19px;
+}
+
+.gallery-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 850px;
+  margin: auto;
+}
+
+.gallery-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  flex-wrap: wrap;
+}
+
+.photo-card {
+  background: #faf6f1;
+  padding: 12px 12px 26px 12px;
+  border-radius: 6px;
+  box-shadow: 0 12px 30px rgba(59, 43, 32, 0.22);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  width: 250px;
+}
+
+.photo-card.tilt-left {
+  transform: rotate(-3deg);
+}
+
+.photo-card.tilt-right {
+  transform: rotate(3deg);
+}
+
+.photo-card:hover {
+  transform: rotate(0deg) translateY(-8px) scale(1.04);
+  box-shadow: 0 18px 40px rgba(59, 43, 32, 0.35);
+  z-index: 10;
+}
+
+.photo-card img {
+  width: 100%;
+  height: 290px;
+  object-fit: cover;
+  border-radius: 3px;
+  display: block;
+}
+
+.photo-caption {
+  color: #6b5545;
+  font-family: 'Allura', cursive;
+  font-size: 30px;
+  margin-top: 12px;
+}
+
+.letter-container {
+  max-width: 780px;
+  margin: auto;
+}
+
+.message-card {
+  padding: 55px 42px;
+  background: rgba(250, 246, 241, 0.95);
+  color: #4f3d30;
+  border: 1px solid #e3d3c5;
+  border-radius: 16px;
+  line-height: 2.2;
+  font-size: 20px;
+  box-shadow: 0 15px 40px rgba(59, 43, 32, 0.2);
+  text-align: left;
+}
+
+.message-card p {
+  margin-bottom: 22px;
+}
+
+.highlight-quote {
+  font-style: italic;
+  font-size: 21px;
+  color: #6b5545;
+  background: rgba(180, 159, 142, 0.14);
+  padding: 18px 22px;
+  border-radius: 8px;
+  border-left: 3px solid #6b5545;
+  margin: 26px 0;
+  line-height: 1.8;
+}
+
+.signature-box {
+  text-align: center;
+  margin-top: 35px;
+}
+
+.signature {
+  font-family: 'Allura', cursive;
+  color: #6b5545;
+  font-size: 55px;
+  line-height: 1.2;
+}
+
+.love-tag {
+  font-family: 'Montserrat', sans-serif;
+  color: #8c725e;
+  font-size: 14px;
+  letter-spacing: 4px;
+  margin: 25px 0;
+  text-align: center;
+}
+
+.secret-box {
+  display: none;
+  margin-top: 30px;
+  padding: 35px 28px;
+  background: #f4efe9;
+  border: 1px dashed #c7b2a1;
+  border-radius: 12px;
+  color: #5c4637;
+  font-size: 21px;
+  line-height: 2;
+  text-align: center;
+  animation: appear 1s ease;
+}
+
+@keyframes appear {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+footer {
+  padding: 40px 15px 55px;
+  background: rgba(92, 73, 59, 0.35);
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  color: #fdfbf7;
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+
+.petal {
+  position: fixed;
+  top: -30px;
+  animation: fall linear forwards;
+  pointer-events: none;
+  z-index: 50;
+  opacity: 0.75;
+}
+
+@keyframes fall {
+  0% { transform: translateY(0) rotate(0deg); opacity: 0; }
+  15% { opacity: 0.8; }
+  100% { transform: translateY(105vh) rotate(360deg); opacity: 0; }
+}
+
+@media(max-width:768px) {
+  body { padding: 10px; }
+  .message-card { padding: 35px 22px; font-size: 18px; }
+  .photo-card { width: 100%; max-width: 280px; }
+  section h2 { font-size: 50px; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Local OGG Music File -->
+<audio id="bgMusic" loop preload="auto">
+  <source src="music.ogg" type="audio/ogg">
+</audio>
+
+<button class="music-control" onclick="toggleMusic()" id="musicBtn">
+  🎵 Play Music
+</button>
+
+<div class="page-frame">
+
+  <svg class="floral-top-right" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M190 10 C150 40, 120 80, 70 130" stroke="#5e493a" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M135 55 C120 40, 105 35, 90 38" stroke="#5e493a" stroke-width="1.8" stroke-linecap="round"/>
+    <path d="M110 85 C125 100, 130 115, 128 130" stroke="#5e493a" stroke-width="1.8" stroke-linecap="round"/>
+    <circle cx="88" cy="36" r="14" fill="#f7f2ec"/>
+    <circle cx="96" cy="42" r="11" fill="#efe6dc"/>
+    <circle cx="82" cy="44" r="10" fill="#ffffff"/>
+    <circle cx="128" cy="132" r="16" fill="#f7f2ec"/>
+    <circle cx="136" cy="126" r="12" fill="#efe6dc"/>
+    <circle cx="122" cy="125" r="11" fill="#ffffff"/>
+    <circle cx="68" cy="132" r="15" fill="#f7f2ec"/>
+    <circle cx="75" cy="138" r="11" fill="#ffffff"/>
+  </svg>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <div class="small-title">A SPECIAL MESSAGE FROM MY HEART</div>
+    <h1>Our Love Story</h1>
+    <div class="quote-box">
+      <span class="quote-mark">“</span>
+      Life is a journey and love is what makes that journey worthwhile
+      <span class="quote-mark">”</span>
+    </div>
+    <div class="main-photo-wrapper">
+      <img src="a5.jpeg" class="main-photo" alt="My beautiful salma">
+    </div>
+    <h2>salma 🤍</h2>
+    <p style="font-size: 19px; color: #f7efe8; margin-top: 6px;">
+      For the most beautiful soul in my world.
+    </p>
+    <button class="btn-primary" onclick="startExperience()">
+      Discover My Love 🤍
+    </button>
+  </div>
+
+  <!-- Gallery Section -->
+  <section id="gallery">
+    <h2>My Beautiful salma 🕊️</h2>
+    <div class="divider"></div>
+    <p class="subtitle">Every picture holds a memory I cherish forever...</p>
+
+    <div class="gallery-layout">
+      <div class="gallery-row">
+        <div class="photo-card tilt-left">
+          <img src="a1.jpeg" alt="salma 1">
+          <div class="photo-caption">Pure Grace</div>
+        </div>
+        <div class="photo-card tilt-right">
+          <img src="a2.jpeg" alt="salma 2">
+          <div class="photo-caption">My Happiness</div>
+        </div>
+      </div>
+      <div class="gallery-row">
+        <div class="photo-card tilt-right">
+          <img src="a3.jpeg" alt="salma 3">
+          <div class="photo-caption">Always You</div>
+        </div>
+        <div class="photo-card tilt-left">
+          <img src="a4.jpeg" alt="salma 4">
+          <div class="photo-caption">My Peace</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Letter Section -->
+  <section>
+    <h2>A Letter From My Heart 💌</h2>
+    <div class="divider"></div>
+
+    <div class="letter-container">
+      <div class="message-card">
+        <p>To my dearest <strong>salma</strong>, my safe place and my greatest blessing 🤍</p>
+        
+        <p>Before you, I never realized how much warmth and peace one person could bring into a life. You didn't just walk into my world—you became the best part of it. Every laugh we share, every quiet moment, and every glance from you feels like home.</p>
+        
+        <div class="highlight-quote">
+          “In a world full of temporary things, you are my favorite certainty. Loving you is the easiest, purest thing my heart has ever done.”
+        </div>
+
+        <p>You are the calm in my chaos, the reason behind my happiest days, and the first thought on my mind when I wake up. I admire your kindness, your grace, and the effortless beauty of your soul.</p>
+        
+        <p>No matter what tomorrow brings or where life leads us, my promise to you remains the same: I will always stand by you, cherish you, and choose you over and over again. Thank you for being mine. 🕊️</p>
+
+        <div class="signature-box">
+          <div class="signature">Forever Yours,<br>Anouar 🤍</div>
+        </div>
+
+        <div class="love-tag">∞ ANOUAR & salma ∞</div>
+
+        <div style="text-align: center;">
+          <button class="btn-primary" onclick="showSecret()">
+            Open My Secret 🤍
+          </button>
+        </div>
+
+        <div id="secret" class="secret-box">
+          <strong>🤍 MY PROMISE TO YOU, salma 🤍</strong>
+          <br><br>
+          If I could live my life all over again, I would find you sooner just so I could love you longer. You are my today, my tomorrow, and my forever.
+          <br><br>
+          <strong>I LOVE YOU ENDLESSLY. 🌹</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <svg class="floral-bottom-left" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M30 210 L10 110 L35 195 L40 95 L50 190 L75 100 L65 192 L105 115 L75 200 Z" fill="#e6d3be" opacity="0.85"/>
+    <circle cx="95" cy="185" r="34" fill="#e8c3c8"/>
+    <circle cx="95" cy="185" r="24" fill="#dfb0b7"/>
+    <circle cx="95" cy="185" r="14" fill="#d49ba4"/>
+    <circle cx="145" cy="195" r="15" fill="#f7f2ec"/>
+    <circle cx="153" cy="190" r="11" fill="#ffffff"/>
+  </svg>
+
+  <footer>
+    Made with all my love 🤍
+    <br><br>
+    <strong>Anouar & salma</strong>
+    <br><br>
+    Forever & Always 🕊️
+  </footer>
+
+</div>
+
+<script>
+const music = document.getElementById("bgMusic");
+const musicBtn = document.getElementById("musicBtn");
+let isPlaying = false;
+
+function toggleMusic() {
+  if (isPlaying) {
+    music.pause();
+    musicBtn.innerHTML = "🎵 Play Music";
+    isPlaying = false;
+  } else {
+    music.volume = 0.6;
+    music.play().then(() => {
+      musicBtn.innerHTML = "⏸ Pause Music";
+      isPlaying = true;
+    }).catch(() => {
+      alert("T2akked belli smiyat l'fichier hiya music.ogg f nafss le dossier!");
+    });
+  }
+}
+
+function startExperience() {
+  if (!isPlaying) {
+    music.volume = 0.6;
+    music.play().then(() => {
+      musicBtn.innerHTML = "⏸ Pause Music";
+      isPlaying = true;
+    }).catch(() => {});
+  }
+  document.getElementById('gallery').scrollIntoView({ behavior: 'smooth' });
+}
+
+function showSecret() {
+  const secret = document.getElementById("secret");
+  secret.style.display = "block";
+  secret.scrollIntoView({ behavior: "smooth", block: "center" });
+}
+
+function createPetal() {
+  const petal = document.createElement("div");
+  petal.className = "petal";
+  petal.innerHTML = ["🤍", "🕊️", "🌸", "✨", "🍂"][
+    Math.floor(Math.random() * 5)
+  ];
+  petal.style.left = Math.random() * 100 + "vw";
+  petal.style.fontSize = (14 + Math.random() * 16) + "px";
+  petal.style.animationDuration = (6 + Math.random() * 6) + "s";
+  document.body.appendChild(petal);
+
+  setTimeout(() => petal.remove(), 12000);
+}
+
+setInterval(createPetal, 900);
+</script>
+
+</body>
+</html>
